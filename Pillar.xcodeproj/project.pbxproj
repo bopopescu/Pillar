@@ -8,20 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		F4B8FD4C209571E00063CD2A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B8FD4B209571E00063CD2A /* AppDelegate.swift */; };
-		F4B8FD4E209571E00063CD2A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B8FD4D209571E00063CD2A /* ViewController.swift */; };
 		F4B8FD51209571E00063CD2A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4B8FD4F209571E00063CD2A /* Main.storyboard */; };
 		F4B8FD53209571E10063CD2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4B8FD52209571E10063CD2A /* Assets.xcassets */; };
 		F4B8FD56209571E10063CD2A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4B8FD54209571E10063CD2A /* LaunchScreen.storyboard */; };
+		F4B8FD66209588E50063CD2A /* customTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B8FD65209588E50063CD2A /* customTextField.swift */; };
+		F4B8FD6D209597510063CD2A /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B8FD6B209597510063CD2A /* LoginVC.swift */; };
+		F4B8FD6F209597740063CD2A /* LoginTypeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B8FD6E209597740063CD2A /* LoginTypeVC.swift */; };
+		F4B8FD712095978D0063CD2A /* LoginStep1VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B8FD702095978D0063CD2A /* LoginStep1VC.swift */; };
+		F4B8FD732095979D0063CD2A /* LoginStep2VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B8FD722095979D0063CD2A /* LoginStep2VC.swift */; };
+		F4B8FD75209597AB0063CD2A /* LoginStep3VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B8FD74209597AB0063CD2A /* LoginStep3VC.swift */; };
+		F4B8FD77209630B20063CD2A /* QrScannerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B8FD76209630B20063CD2A /* QrScannerVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F4B8FD48209571E00063CD2A /* Pillar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pillar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4B8FD4B209571E00063CD2A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F4B8FD4D209571E00063CD2A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F4B8FD50209571E00063CD2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F4B8FD52209571E10063CD2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F4B8FD55209571E10063CD2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F4B8FD57209571E10063CD2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4B8FD65209588E50063CD2A /* customTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customTextField.swift; sourceTree = "<group>"; };
+		F4B8FD6B209597510063CD2A /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		F4B8FD6E209597740063CD2A /* LoginTypeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTypeVC.swift; sourceTree = "<group>"; };
+		F4B8FD702095978D0063CD2A /* LoginStep1VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginStep1VC.swift; sourceTree = "<group>"; };
+		F4B8FD722095979D0063CD2A /* LoginStep2VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginStep2VC.swift; sourceTree = "<group>"; };
+		F4B8FD74209597AB0063CD2A /* LoginStep3VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginStep3VC.swift; sourceTree = "<group>"; };
+		F4B8FD76209630B20063CD2A /* QrScannerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QrScannerVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +66,37 @@
 		F4B8FD4A209571E00063CD2A /* Pillar */ = {
 			isa = PBXGroup;
 			children = (
+				F4B8FD69209597370063CD2A /* Controller */,
+				F4B8FD64209588C30063CD2A /* View */,
 				F4B8FD4B209571E00063CD2A /* AppDelegate.swift */,
-				F4B8FD4D209571E00063CD2A /* ViewController.swift */,
 				F4B8FD4F209571E00063CD2A /* Main.storyboard */,
 				F4B8FD52209571E10063CD2A /* Assets.xcassets */,
 				F4B8FD54209571E10063CD2A /* LaunchScreen.storyboard */,
 				F4B8FD57209571E10063CD2A /* Info.plist */,
 			);
 			path = Pillar;
+			sourceTree = "<group>";
+		};
+		F4B8FD64209588C30063CD2A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F4B8FD65209588E50063CD2A /* customTextField.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F4B8FD69209597370063CD2A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F4B8FD6B209597510063CD2A /* LoginVC.swift */,
+				F4B8FD6E209597740063CD2A /* LoginTypeVC.swift */,
+				F4B8FD702095978D0063CD2A /* LoginStep1VC.swift */,
+				F4B8FD722095979D0063CD2A /* LoginStep2VC.swift */,
+				F4B8FD74209597AB0063CD2A /* LoginStep3VC.swift */,
+				F4B8FD76209630B20063CD2A /* QrScannerVC.swift */,
+			);
+			name = Controller;
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +170,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4B8FD4E209571E00063CD2A /* ViewController.swift in Sources */,
+				F4B8FD6F209597740063CD2A /* LoginTypeVC.swift in Sources */,
+				F4B8FD732095979D0063CD2A /* LoginStep2VC.swift in Sources */,
+				F4B8FD77209630B20063CD2A /* QrScannerVC.swift in Sources */,
+				F4B8FD712095978D0063CD2A /* LoginStep1VC.swift in Sources */,
+				F4B8FD6D209597510063CD2A /* LoginVC.swift in Sources */,
 				F4B8FD4C209571E00063CD2A /* AppDelegate.swift in Sources */,
+				F4B8FD75209597AB0063CD2A /* LoginStep3VC.swift in Sources */,
+				F4B8FD66209588E50063CD2A /* customTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

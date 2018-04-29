@@ -8,11 +8,14 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class LoginVC: UIViewController {
 
+    @IBOutlet weak var scanBtn: UIButton!
+    @IBOutlet weak var createNewActBtn: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        //navigationController?.navigationBar.isHidden = true
     }
 
     override func didReceiveMemoryWarning() {
