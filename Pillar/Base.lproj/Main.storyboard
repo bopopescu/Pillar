@@ -112,6 +112,33 @@
             </objects>
             <point key="canvasLocation" x="956" y="59"/>
         </scene>
+        <!--Scan Success View Controller-->
+        <scene sceneID="OIb-q8-kRL">
+            <objects>
+                <viewController storyboardIdentifier="scanSuccess" id="vJH-pI-Sau" customClass="ScanSuccessViewController" customModule="Pillar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="P1m-Vh-ZBy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bankscreen" translatesAutoresizingMaskIntoConstraints="NO" id="6zi-46-O4X">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6zi-46-O4X" firstAttribute="leading" secondItem="NCD-YG-xBZ" secondAttribute="leading" id="EzC-bo-Scm"/>
+                            <constraint firstItem="6zi-46-O4X" firstAttribute="trailing" secondItem="NCD-YG-xBZ" secondAttribute="trailing" id="apX-1c-mpJ"/>
+                            <constraint firstItem="6zi-46-O4X" firstAttribute="bottom" secondItem="NCD-YG-xBZ" secondAttribute="bottom" id="ib4-JB-dDG"/>
+                            <constraint firstItem="6zi-46-O4X" firstAttribute="top" secondItem="P1m-Vh-ZBy" secondAttribute="top" id="kcY-9F-Fwq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="NCD-YG-xBZ"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1MJ-UK-VZa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="170.40000000000001" y="831.63418290854577"/>
+        </scene>
         <!--Scanner Controller-->
         <scene sceneID="1fd-GS-Z7W">
             <objects>
@@ -122,6 +149,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Hdg-si-JSc"/>
                     </view>
+                    <connections>
+                        <segue destination="vJH-pI-Sau" kind="show" identifier="success" id="0ey-gO-iFq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fdb-IA-1RE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -227,6 +257,7 @@
                             </textField>
                         </subviews>
                         <color key="backgroundColor" red="0.1590335262" green="0.76512265300000004" blue="0.827172715" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="mgn-dF-6AH" firstAttribute="top" secondItem="4Hh-25-HYU" secondAttribute="bottom" constant="48" id="1IH-C8-pjW"/>
                             <constraint firstItem="4yT-m8-tRo" firstAttribute="bottom" secondItem="b0J-jh-lue" secondAttribute="bottom" constant="20" id="37N-vh-Fnv"/>
@@ -247,6 +278,9 @@
                             <constraint firstItem="1Ax-8y-NO9" firstAttribute="centerY" secondItem="pZv-EK-w5D" secondAttribute="centerY" constant="-5" id="zBU-Sv-4QA"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="4yT-m8-tRo"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Z9Q-1h-XKD" appends="YES" id="j7K-VC-z38"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="Dfx-NL-z93"/>
                     <connections>
@@ -256,6 +290,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HGz-io-b9w" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Z9Q-1h-XKD">
+                    <connections>
+                        <action selector="screenTapped:" destination="G41-np-W1o" id="UVT-9N-FCh"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1701.5999999999999" y="797.45127436281871"/>
         </scene>
@@ -344,6 +383,7 @@
                             </textField>
                         </subviews>
                         <color key="backgroundColor" red="0.1590335262" green="0.76512265300000004" blue="0.827172715" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="UfD-6j-LEX" firstAttribute="leading" secondItem="nlk-Eh-vOb" secondAttribute="leading" constant="16" id="8aQ-mb-TZy"/>
                             <constraint firstItem="peJ-Ms-JVg" firstAttribute="centerX" secondItem="nfV-Ct-0NU" secondAttribute="centerX" id="CHm-iG-66Y"/>
@@ -362,6 +402,9 @@
                             <constraint firstItem="nhB-Ty-SuB" firstAttribute="leading" secondItem="jav-Yb-kUc" secondAttribute="leading" id="vTF-c5-fP2"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="nlk-Eh-vOb"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Qor-n4-2Ts" appends="YES" id="1Le-MV-hSg"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="KqI-Kw-BKH"/>
                     <connections>
@@ -370,6 +413,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eMt-yd-Xaq" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Qor-n4-2Ts">
+                    <connections>
+                        <action selector="screenTapped:" destination="7P8-cu-fCY" id="2I3-qw-chg"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1676" y="1506"/>
         </scene>
@@ -443,6 +491,7 @@
                             </textField>
                         </subviews>
                         <color key="backgroundColor" red="0.1590335262" green="0.76512265300000004" blue="0.827172715" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="D86-SJ-ZkZ" firstAttribute="leading" secondItem="xCn-BW-AVD" secondAttribute="trailing" constant="8" id="26r-nv-uNu"/>
                             <constraint firstItem="73D-Tq-IOa" firstAttribute="centerX" secondItem="8Va-Em-mOa" secondAttribute="centerX" id="3ce-jg-rOK"/>
@@ -459,6 +508,9 @@
                             <constraint firstItem="O6h-dn-TfI" firstAttribute="leading" secondItem="KXm-mt-5MG" secondAttribute="leading" id="yqN-vk-AUQ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="4bI-rF-CHQ"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="QjS-31-7In" appends="YES" id="I3o-VJ-9b6"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="F5H-hO-ZMz"/>
                     <connections>
@@ -466,6 +518,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hUY-qZ-PHF" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="QjS-31-7In">
+                    <connections>
+                        <action selector="screenTapped:" destination="L5k-Dh-Gpi" id="8Lw-76-PW0"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1702" y="2283"/>
         </scene>
@@ -771,6 +828,7 @@
         <image name="Phone" width="194" height="194"/>
         <image name="Profile" width="79" height="79"/>
         <image name="Twitter" width="117" height="117"/>
+        <image name="bankscreen" width="375" height="667"/>
         <image name="check" width="290" height="290"/>
         <image name="creditCard" width="194" height="194"/>
         <image name="fingerprint" width="101" height="101"/>

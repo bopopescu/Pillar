@@ -106,16 +106,20 @@ class QRScannerController: UIViewController {
 
 
     // MARK: - Helper methods
-
+    func dissmiss() {
+        let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+        let successVC = storyboard.instantiateViewController(withIdentifier: "scanSuccess")
+        present(successVC, animated: true, completion: nil)
+    }
     func launchApp(decodedURL: String) {
 
         if presentedViewController != nil {
             return
         }
 
-        let alertPrompt = UIAlertController(title: "Identity Confirmed", message: "Your iD is \(decodedURL). Open wallet?", preferredStyle: .actionSheet)
+        let alertPrompt = UIAlertController(title: "Identity Confirmed", message: "Would you like to donate?", preferredStyle: .actionSheet)
         let confirmAction = UIAlertAction(title: "Confirm", style: UIAlertActionStyle.default, handler: { (action) -> Void in
-
+            self.dissmiss()
 //            if let url = URL(string: decodedURL) {
 //                if UIApplication.shared.canOpenURL(url) {
 //                    UIApplication.shared.open(url, options: [:], completionHandler: nil)

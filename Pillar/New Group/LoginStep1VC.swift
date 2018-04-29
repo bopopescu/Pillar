@@ -40,6 +40,11 @@ class LoginStep1VC: UIViewController, UITextFieldDelegate {
         }
     }
 
+    @IBAction func screenTapped(_ sender: Any) {
+    self.resignFirstResponder()
+        print("tapped")
+
+    }
 
     /*
     // MARK: - Navigation
