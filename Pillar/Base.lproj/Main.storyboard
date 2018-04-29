@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tpp-vD-chQ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vJH-pI-Sau">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -130,6 +130,12 @@
                                     <segue destination="bwq-iX-DGk" kind="show" id="mqP-Yd-nM9"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kez-zE-vZS">
+                                <rect key="frame" x="243" y="309" width="97" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -141,6 +147,9 @@
                             <constraint firstItem="QLQ-Y9-0Q9" firstAttribute="centerX" secondItem="6zi-46-O4X" secondAttribute="centerX" id="ggd-Yi-wif"/>
                             <constraint firstItem="6zi-46-O4X" firstAttribute="bottom" secondItem="NCD-YG-xBZ" secondAttribute="bottom" id="ib4-JB-dDG"/>
                             <constraint firstItem="6zi-46-O4X" firstAttribute="top" secondItem="P1m-Vh-ZBy" secondAttribute="top" id="kcY-9F-Fwq"/>
+                            <constraint firstItem="kez-zE-vZS" firstAttribute="leading" secondItem="NCD-YG-xBZ" secondAttribute="leading" constant="243" id="kzf-Ej-UC7"/>
+                            <constraint firstItem="kez-zE-vZS" firstAttribute="top" secondItem="NCD-YG-xBZ" secondAttribute="top" constant="245" id="lJJ-Kf-heG"/>
+                            <constraint firstItem="NCD-YG-xBZ" firstAttribute="trailing" secondItem="kez-zE-vZS" secondAttribute="trailing" constant="35" id="xhz-b1-XLr"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="NCD-YG-xBZ"/>
                     </view>
