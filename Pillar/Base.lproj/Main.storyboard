@@ -120,24 +120,72 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bankscreen" translatesAutoresizingMaskIntoConstraints="NO" id="6zi-46-O4X">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Payment" translatesAutoresizingMaskIntoConstraints="NO" id="6zi-46-O4X">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QLQ-Y9-0Q9">
+                                <rect key="frame" x="30" y="617" width="315" height="30"/>
+                                <connections>
+                                    <segue destination="bwq-iX-DGk" kind="show" id="mqP-Yd-nM9"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="QLQ-Y9-0Q9" firstAttribute="top" secondItem="NCD-YG-xBZ" secondAttribute="top" constant="585" id="1sZ-l7-BLu"/>
+                            <constraint firstItem="QLQ-Y9-0Q9" firstAttribute="leading" secondItem="NCD-YG-xBZ" secondAttribute="leading" constant="30" id="Eme-BP-8Yn"/>
                             <constraint firstItem="6zi-46-O4X" firstAttribute="leading" secondItem="NCD-YG-xBZ" secondAttribute="leading" id="EzC-bo-Scm"/>
+                            <constraint firstAttribute="bottom" secondItem="QLQ-Y9-0Q9" secondAttribute="bottom" constant="20" symbolic="YES" id="Nnh-Vs-hIF"/>
                             <constraint firstItem="6zi-46-O4X" firstAttribute="trailing" secondItem="NCD-YG-xBZ" secondAttribute="trailing" id="apX-1c-mpJ"/>
+                            <constraint firstItem="QLQ-Y9-0Q9" firstAttribute="centerX" secondItem="6zi-46-O4X" secondAttribute="centerX" id="ggd-Yi-wif"/>
                             <constraint firstItem="6zi-46-O4X" firstAttribute="bottom" secondItem="NCD-YG-xBZ" secondAttribute="bottom" id="ib4-JB-dDG"/>
                             <constraint firstItem="6zi-46-O4X" firstAttribute="top" secondItem="P1m-Vh-ZBy" secondAttribute="top" id="kcY-9F-Fwq"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="NCD-YG-xBZ"/>
                     </view>
+                    <navigationItem key="navigationItem" id="kxg-9y-0zG"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1MJ-UK-VZa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="170.40000000000001" y="831.63418290854577"/>
+            <point key="canvasLocation" x="652" y="827.13643178410803"/>
+        </scene>
+        <!--Scan Success View Controller-->
+        <scene sceneID="hPd-IJ-vDf">
+            <objects>
+                <viewController storyboardIdentifier="Success" id="bwq-iX-DGk" customClass="ScanSuccessViewController" customModule="Pillar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4eL-Ea-e2L">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="success" translatesAutoresizingMaskIntoConstraints="NO" id="Il2-tS-S0M">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EwE-HT-h0n">
+                                <rect key="frame" x="30" y="617" width="315" height="30"/>
+                                <connections>
+                                    <segue destination="tpp-vD-chQ" kind="show" id="sg1-pe-AIY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="EwE-HT-h0n" firstAttribute="centerX" secondItem="Il2-tS-S0M" secondAttribute="centerX" id="MfB-9S-thI"/>
+                            <constraint firstItem="Il2-tS-S0M" firstAttribute="trailing" secondItem="z3n-vr-b8L" secondAttribute="trailing" id="NUa-GI-eFe"/>
+                            <constraint firstItem="EwE-HT-h0n" firstAttribute="top" secondItem="z3n-vr-b8L" secondAttribute="top" constant="585" id="OAA-nb-bAr"/>
+                            <constraint firstAttribute="bottom" secondItem="EwE-HT-h0n" secondAttribute="bottom" constant="20" symbolic="YES" id="PMP-Wi-X7x"/>
+                            <constraint firstItem="Il2-tS-S0M" firstAttribute="leading" secondItem="z3n-vr-b8L" secondAttribute="leading" id="ibe-cx-l5f"/>
+                            <constraint firstItem="Il2-tS-S0M" firstAttribute="bottom" secondItem="z3n-vr-b8L" secondAttribute="bottom" id="nJJ-hM-lFh"/>
+                            <constraint firstItem="EwE-HT-h0n" firstAttribute="leading" secondItem="z3n-vr-b8L" secondAttribute="leading" constant="30" id="yw0-oN-Hls"/>
+                            <constraint firstItem="Il2-tS-S0M" firstAttribute="top" secondItem="4eL-Ea-e2L" secondAttribute="top" id="znw-kK-rat"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="z3n-vr-b8L"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jl8-oK-2Ml" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1262" y="1008"/>
         </scene>
         <!--Scanner Controller-->
         <scene sceneID="1fd-GS-Z7W">
@@ -149,13 +197,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Hdg-si-JSc"/>
                     </view>
-                    <connections>
-                        <segue destination="vJH-pI-Sau" kind="show" identifier="success" id="0ey-gO-iFq"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fdb-IA-1RE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="954" y="741"/>
+            <point key="canvasLocation" x="1892" y="740.7796101949026"/>
         </scene>
         <!--Login Step1VC-->
         <scene sceneID="tfJ-i0-tCx">
@@ -296,7 +341,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1701.5999999999999" y="797.45127436281871"/>
+            <point key="canvasLocation" x="2640.8000000000002" y="797.45127436281871"/>
         </scene>
         <!--Login Step2VC-->
         <scene sceneID="qGY-mJ-Drh">
@@ -820,19 +865,41 @@
             </objects>
             <point key="canvasLocation" x="1676" y="59"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="RNY-Wq-cWQ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" hidesBarsOnSwipe="YES" id="k26-oM-djM" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="We8-pO-Zu1">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="639-sT-2v2">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="vJH-pI-Sau" kind="relationship" relationship="rootViewController" id="3L3-Ip-HIg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yyE-RB-jse" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-287.19999999999999" y="827.13643178410803"/>
+        </scene>
     </scenes>
     <resources>
         <image name="BankIcon" width="194" height="194"/>
         <image name="Facebook" width="117" height="117"/>
         <image name="Lock" width="194" height="194"/>
+        <image name="Payment" width="375" height="667"/>
         <image name="Phone" width="194" height="194"/>
         <image name="Profile" width="79" height="79"/>
         <image name="Twitter" width="117" height="117"/>
-        <image name="bankscreen" width="375" height="667"/>
         <image name="check" width="290" height="290"/>
         <image name="creditCard" width="194" height="194"/>
         <image name="fingerprint" width="101" height="101"/>
         <image name="google" width="117" height="117"/>
         <image name="pillarLogoText" width="237" height="88"/>
+        <image name="success" width="375" height="667"/>
     </resources>
 </document>
